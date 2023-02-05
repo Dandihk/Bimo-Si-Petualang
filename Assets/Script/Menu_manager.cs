@@ -42,7 +42,10 @@ public class Menu_manager : MonoBehaviour
     [SerializeField] private Button setting_btn;
     [SerializeField] private Button about_btn;
 
-
+    public void openlink(string link)
+    {
+        Application.OpenURL(link);
+    }
 
     private void Awake()
     {
